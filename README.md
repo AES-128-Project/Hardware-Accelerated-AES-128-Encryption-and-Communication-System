@@ -32,9 +32,11 @@ The system consists of three primary stages:
 ## 📂 Repository Structure
 ```text
 ├── fpga_rtl/                  # Verilog source files for the Basys 3
-│   ├── aes128_core.v          # 11-stage unrolled AES cryptographic core
-│   ├── uart_rx.v              # UART Receiver module
-│   ├── uart_tx_128.v          # 128-bit UART Transmitter module
+│   ├── aes128_top.v           # 11-stage unrolled AES cryptographic core
+|   ├── aes_sbox.v             # Standard FIPS Look Up Table
+|   ├── aes_mixcols.v
+|   ├── aes_round.v
+│   ├── uart_tx.v              # 128-bit UART Transmitter module
 │   ├── rfid_aes_uart_top.v    # Top-level integration and FSM logic
 │   └── constraints/
 │       └── basys3_master.xdc  # Physical pin constraints (XDC)
