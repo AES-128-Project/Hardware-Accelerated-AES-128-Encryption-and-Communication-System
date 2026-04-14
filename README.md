@@ -1,10 +1,5 @@
 # Hardware-Accelerated AES-128 RFID Authentication System
 
-![FPGA](https://img.shields.io/badge/FPGA-Basys%203%20Artix--7-blue)
-![Microcontroller](https://img.shields.io/badge/Microcontroller-ESP32-success)
-![Encryption](https://img.shields.io/badge/Encryption-AES--128-red)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-
 ## 📌 Project Overview
 This repository contains the RTL source code, microcontroller firmware, and documentation for a hybrid hardware-software secure access system. The project offloads computationally heavy cryptographic tasks (AES-128) to a dedicated FPGA hardware accelerator, achieving a strict 11-cycle encryption latency. The encrypted credentials are then relayed over a secure wireless Bluetooth link via ESP32 microcontrollers.
 
